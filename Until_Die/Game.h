@@ -1,21 +1,19 @@
-#pragma once
-#include <SFML/Graphics.hpp>
+#ifndef GAME_H
+#define GAME_H
+
+#include "stdafx.h"
 
 class Game
 {
 private:
-	sf::RenderWindow mWindow;
-	sf::CircleShape mPlayer;
+	sf::RenderWindow window;
 
-
-	void processEvents();
-	void update();
-	void render();
+	void initWindow();
 
 public:
 	Game();
 	~Game();
-
-	void run();
 };
+
+#endif
 

@@ -13,6 +13,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{8DEA7FCE-15D6-4854-8B2E-73DD24E6E32B}|Until_Die\\Until_Die.vcxproj|C:\\Users\\Bartek\\Desktop\\Git\\Until_Die\\Until_Die\\Until_Die.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{8DEA7FCE-15D6-4854-8B2E-73DD24E6E32B}|Until_Die\\Until_Die.vcxproj|solutionrelative:Until_Die\\Until_Die.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DEA7FCE-15D6-4854-8B2E-73DD24E6E32B}|Until_Die\\Until_Die.vcxproj|C:\\Users\\Bartek\\Desktop\\Git\\Until_Die\\Until_Die\\stdafx.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8DEA7FCE-15D6-4854-8B2E-73DD24E6E32B}|Until_Die\\Until_Die.vcxproj|solutionrelative:Until_Die\\stdafx.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DEA7FCE-15D6-4854-8B2E-73DD24E6E32B}|Until_Die\\Until_Die.vcxproj|C:\\Users\\Bartek\\Desktop\\Git\\Until_Die\\Until_Die\\stdafx.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8DEA7FCE-15D6-4854-8B2E-73DD24E6E32B}|Until_Die\\Until_Die.vcxproj|solutionrelative:Until_Die\\stdafx.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -40,9 +48,9 @@
               "RelativeDocumentMoniker": "Until_Die\\Game.cpp",
               "ToolTip": "C:\\Users\\Bartek\\Desktop\\Git\\Until_Die\\Until_Die\\Game.cpp",
               "RelativeToolTip": "Until_Die\\Game.cpp",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABkAAABHAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-07-19T22:41:39.495Z",
+              "WhenOpened": "2024-07-20T19:00:07.013Z",
               "EditorCaption": ""
             },
             {
@@ -53,9 +61,35 @@
               "RelativeDocumentMoniker": "Until_Die\\Game.h",
               "ToolTip": "C:\\Users\\Bartek\\Desktop\\Git\\Until_Die\\Until_Die\\Game.h",
               "RelativeToolTip": "Until_Die\\Game.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAZAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-07-19T22:41:26.937Z",
+              "WhenOpened": "2024-07-20T19:00:02.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "stdafx.cpp",
+              "DocumentMoniker": "C:\\Users\\Bartek\\Desktop\\Git\\Until_Die\\Until_Die\\stdafx.cpp",
+              "RelativeDocumentMoniker": "Until_Die\\stdafx.cpp",
+              "ToolTip": "C:\\Users\\Bartek\\Desktop\\Git\\Until_Die\\Until_Die\\stdafx.cpp",
+              "RelativeToolTip": "Until_Die\\stdafx.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-07-20T18:52:58.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "stdafx.h",
+              "DocumentMoniker": "C:\\Users\\Bartek\\Desktop\\Git\\Until_Die\\Until_Die\\stdafx.h",
+              "RelativeDocumentMoniker": "Until_Die\\stdafx.h",
+              "ToolTip": "C:\\Users\\Bartek\\Desktop\\Git\\Until_Die\\Until_Die\\stdafx.h",
+              "RelativeToolTip": "Until_Die\\stdafx.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-07-20T18:52:43.491Z",
               "EditorCaption": ""
             },
             {
@@ -66,9 +100,9 @@
               "RelativeDocumentMoniker": "Until_Die\\Until_Die.cpp",
               "ToolTip": "C:\\Users\\Bartek\\Desktop\\Git\\Until_Die\\Until_Die\\Until_Die.cpp",
               "RelativeToolTip": "Until_Die\\Until_Die.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-07-17T21:40:47.084Z",
+              "WhenOpened": "2024-07-20T18:46:15.163Z",
               "EditorCaption": ""
             }
           ]
