@@ -27,12 +27,18 @@
     <ClCompile Include="Game.cpp">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
       <Filter>PreCompile</Filter>
     </ClInclude>
     <ClInclude Include="Game.h">
+      <Filter>Pliki źródłowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
       <Filter>Pliki źródłowe</Filter>
     </ClInclude>
   </ItemGroup>
