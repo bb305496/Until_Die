@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{8DEA7FCE-15D6-4854-8B2E-73DD24E6E32B}|Until_Die\\Until_Die.vcxproj|C:\\Users\\Bartek\\Desktop\\Git\\Until_Die\\Until_Die\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{8DEA7FCE-15D6-4854-8B2E-73DD24E6E32B}|Until_Die\\Until_Die.vcxproj|solutionrelative:Until_Die\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DEA7FCE-15D6-4854-8B2E-73DD24E6E32B}|Until_Die\\Until_Die.vcxproj|C:\\Users\\Bartek\\Desktop\\Git\\Until_Die\\Until_Die\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8DEA7FCE-15D6-4854-8B2E-73DD24E6E32B}|Until_Die\\Until_Die.vcxproj|solutionrelative:Until_Die\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,15 +30,27 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Player.h",
+              "DocumentMoniker": "C:\\Users\\Bartek\\Desktop\\Git\\Until_Die\\Until_Die\\Player.h",
+              "RelativeDocumentMoniker": "Until_Die\\Player.h",
+              "ToolTip": "C:\\Users\\Bartek\\Desktop\\Git\\Until_Die\\Until_Die\\Player.h",
+              "RelativeToolTip": "Until_Die\\Player.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-07-28T10:38:21.16Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Player.cpp",
               "DocumentMoniker": "C:\\Users\\Bartek\\Desktop\\Git\\Until_Die\\Until_Die\\Player.cpp",
               "RelativeDocumentMoniker": "Until_Die\\Player.cpp",
               "ToolTip": "C:\\Users\\Bartek\\Desktop\\Git\\Until_Die\\Until_Die\\Player.cpp",
               "RelativeToolTip": "Until_Die\\Player.cpp",
-              "ViewState": "AQIAAKIAAAAAAAAAAAAAALYAAAAiAAAA",
+              "ViewState": "AQIAACYBAAAAAAAAAAAAAC4BAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-07-28T09:07:42.285Z",
+              "WhenOpened": "2024-07-28T10:38:20.582Z",
               "EditorCaption": ""
             }
           ]

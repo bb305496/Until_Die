@@ -7,26 +7,52 @@ void Game::initWindow()
 	this->window.setFramerateLimit(60);
 }
 
+void Game::initTileSheet()
+{
+	if (!this->tileSheet1.loadFromFile("Textures/Sprites/Main/Kenshin.png"))
+	{
+		std::cout << "ERROR::GAME::COULD NOT LOAD THE TILE TEXTURE" << "\n";
+	}
+}
+
 void Game::initPlayer()
 {
 	this->player = new Player();
 }
 
+void Game::initTileMap()
+{
+	this->tileMap = new TileMap(20, 20, &this->tileSheet1, 50);
+	for (int i = 0; i < 5; i++)
+	{
+		for (int k = 0; k < 5; k++)
+		{
+			this->tileMap->addTile(i, k);
+		}
+	}
+
+}
+
+
 Game::Game()
 {
 	this->initWindow();
+	this->initTileSheet();
+	this->initTileMap();
 	this->initPlayer();
 }
 
 Game::~Game()
 {
 	delete this->player;
+	delete this->tileMap;
 }
 
 void Game::updatePlayer()
 {
 	this->player->update();
 }
+
 
 void Game::updateCollision()
 {
@@ -37,7 +63,14 @@ void Game::updateCollision()
 			this->player->getPosition().x,
 			this->window.getSize().y - this->player->getGlobalBounds().height
 			);
+		this->player->setCanJump();
 	}
+
+}
+
+void Game::updateTileMap()
+{
+	this->tileMap->update();
 }
 
 const sf::RenderWindow& Game::getWindow() const
@@ -58,7 +91,8 @@ void Game::update()
 			(this->event.key.code == sf::Keyboard::A ||
 				this->event.key.code == sf::Keyboard::D ||
 				this->event.key.code == sf::Keyboard::W ||
-				this->event.key.code == sf::Keyboard::S))
+				this->event.key.code == sf::Keyboard::S ||
+				this->event.key.code == sf::Keyboard::Space))
 		{
 			this->player->resetAnimationTimer();
 		}
@@ -67,6 +101,8 @@ void Game::update()
 	this->updatePlayer();
 
 	this->updateCollision();
+
+	this->updateTileMap();
 }
 
 void Game::renderPlayer()
@@ -74,11 +110,18 @@ void Game::renderPlayer()
 	this->player->render(this->window);
 }
 
+void Game::renderTileMap()
+{
+	this->tileMap->render(this->window);
+}
+
+
 void Game::render()
 {
 	this->window.clear();
 
 	//render game
+	this->renderTileMap();
 	this->renderPlayer();
 
 	this->window.display();

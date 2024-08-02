@@ -1,19 +1,27 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 
-enum PLAYER_ANIMATIONS_STATES {IDLE = 0, MOVING_LEFT, MOVING_RIGHT, JUMPING, FALLING};
+enum PLAYER_ANIMATIONS_STATES {IDLE = 0, MOVING_LEFT, MOVING_RIGHT, JUMPING, FALLING, ULT};
 
 class Player
 {
 private:
 	sf::Texture texture;
+	sf::Texture ultTexture;
 	sf::Sprite sprite;
+	sf::Sprite ultSprite;
 	sf::Clock animationTimer;
 
 	//Animation
 	short animState;
 	sf::IntRect currentFrame;
+	sf::IntRect ultCurrentFrame;
 	bool animationSwitch;
+	bool canJump;
+	bool castULT;
+	bool isCastingULT;
+	bool movingLeft;
+	bool movingRight;
 
 	//Physics
 	sf::Vector2f velocity;
@@ -41,10 +49,15 @@ public:
 	void setPosition(const float x, const float y);
 	void resetVelocityY();
 
+	bool getCanJump();
+	void setCanJump();
+
 	void resetAnimationTimer();
 	void move(const float dir_x, const float dir_y);
+	void jump();
 	void updatePhysics();
 	void updateMovement();
+	void updateAttack();
 	void updateAnimations();
 	void update();
 	void render(sf::RenderTarget& target);

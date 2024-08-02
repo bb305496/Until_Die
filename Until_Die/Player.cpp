@@ -4,6 +4,11 @@
 void Player::initVariables()
 {
 	this->animState = IDLE;
+	this->canJump = true;
+	this->castULT = false;
+	this->isCastingULT = false;
+	this->movingLeft = false;
+	this->movingRight = false;
 }
 
 void Player::initTexture()
@@ -11,6 +16,11 @@ void Player::initTexture()
 	if (!this->texture.loadFromFile("Textures/Sprites/Main/Kenshin.png"))
 	{
 		std::cout << "ERROR::PLAYER::COULD NOT LOAD THE PLAYER TEXTURE" << "\n";
+	}
+
+	if(!this->ultTexture.loadFromFile("Textures/Sprites/Main/ULT.png"))
+	{
+		std::cout << "ERROR::PLAYER::COULD NOT LOAD THE ULT TEXTURE" << "\n";
 	}
 }
 
@@ -22,6 +32,11 @@ void Player::initSprite()
 	this->sprite.setScale(1.5f, 1.5f);
 	/*this->sprite.setOrigin(this->currentFrame.width / 2, this->currentFrame.height);*/
 	//this->sprite.setPosition(600.f, 600.f);
+
+	this->ultSprite.setTexture(this->ultTexture);
+	this->ultCurrentFrame = sf::IntRect(0, 0, 256, 210);
+	this->ultSprite.setTextureRect(this->ultCurrentFrame);
+	this->ultSprite.setScale(1.5f, 1.5f);
 }
 
 void Player::initAnimations()
@@ -34,10 +49,10 @@ void Player::initPhysics()
 {
 	this->velocityMax = 10.f;
 	this->velocityMin = 1.f;
-	this->acceleration = 3.f;
+	this->acceleration = 0.9f;
 	this->drag = 0.90f;
-	this->gravity = 9.8f;
-	this->velocityMaxY = 15.f;
+	this->gravity = 2.5f;
+	this->velocityMaxY = 45.f;
 }
 
 Player::Player()
@@ -84,6 +99,16 @@ void Player::resetVelocityY()
 	this->velocity.y = 0;
 }
 
+bool Player::getCanJump()
+{
+	return this->canJump;
+}
+
+void Player::setCanJump()
+{
+	this->canJump = true;
+}
+
 void Player::resetAnimationTimer()
 {
 	this->animationTimer.restart();
@@ -99,6 +124,12 @@ void Player::move(const float dir_x, const float dir_y)
 	{
 		this->velocity.x = this->velocityMax * ((this->velocity.x < 0.f) ? -1.f : 1.f);
 	}
+}
+
+void Player::jump()
+{
+	this->velocity.y = -this->velocityMaxY;
+
 }
 
 void Player::updatePhysics()
@@ -126,19 +157,41 @@ void Player::updatePhysics()
 
 void Player::updateMovement()
 {
+	if (this->isCastingULT)
+		return;
+
 	this->animState = IDLE;
 
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::A))
 	{
 		this->move(-5.f, 0.f);
 		this->animState = MOVING_LEFT;
+		this->movingLeft = true;
+		this->movingRight = false;
 	}
 	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::D))
 	{
 		this->move(5.f, 0.f);
 		this->animState = MOVING_RIGHT;
+		this->movingRight = true;
+		this->movingLeft = false;
 	}
 
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Space) && this->canJump)
+	{
+		this->jump();
+		this->canJump = false;
+	}
+
+}
+
+void Player::updateAttack()
+{
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Num4) && !this->castULT)
+	{
+		this->animState = ULT;
+		this->isCastingULT = true;
+	}
 }
 
 void Player::updateAnimations()
@@ -186,9 +239,96 @@ void Player::updateAnimations()
 		this->sprite.setScale(-1.5f, 1.5f);
 		this->sprite.setOrigin(this->sprite.getGlobalBounds().width / 1.5f, 0.f);
 	}
+	else if (this->animState == ULT && !this->castULT)
+	{
+		if (movingRight)
+		{
+			if (this->animationTimer.getElapsedTime().asMilliseconds() >= 190.f || this->getAnimSwitch())
+			{
+				this->currentFrame.top = 150.f;
+				this->currentFrame.left += 56.f;
+				if (this->currentFrame.left >= 504.f)
+				{
+					this->currentFrame.left = 0.f;
+					this->animState = IDLE;
+					this->castULT = true;
+				}
+
+				this->animationTimer.restart();
+				this->sprite.setTextureRect(this->currentFrame);
+			}
+			this->sprite.setScale(1.5f, 1.5f);
+			this->sprite.setOrigin(0.f, 0.f);
+		}
+		else if (movingLeft)
+		{
+			if (this->animationTimer.getElapsedTime().asMilliseconds() >= 190.f || this->getAnimSwitch())
+			{
+				this->currentFrame.top = 150.f;
+				this->currentFrame.left += 56.f;
+				if (this->currentFrame.left >= 504.f)
+				{
+					this->currentFrame.left = 0.f;
+					this->animState = IDLE;
+					this->castULT = true;
+				}
+
+				this->animationTimer.restart();
+				this->sprite.setTextureRect(this->currentFrame);
+			}
+			this->sprite.setScale(-1.5f, 1.5f);
+			this->sprite.setOrigin(this->sprite.getGlobalBounds().width / 1.5f, 0.f);
+		}
+	}
 	else
 	{
 		this->animationTimer.restart();
+	}
+
+	if (this->castULT)
+	{
+		if (movingRight)
+		{
+			if (this->animationTimer.getElapsedTime().asMilliseconds() >= 100.f)
+			{
+				this->ultCurrentFrame.top = 0.f;
+				this->ultCurrentFrame.left += 256.f;
+				if (this->ultCurrentFrame.left >= 2560.f)
+				{
+					this->ultCurrentFrame.left = 0;
+					this->castULT = false;
+					this->isCastingULT = false;
+				}
+
+				this->animationTimer.restart();
+				this->ultSprite.setTextureRect(this->ultCurrentFrame);
+			}
+			this->ultSprite.setScale(1.5f, 1.5f);
+			this->ultSprite.setOrigin(0.f, 0.f);
+			this->ultSprite.setPosition(this->sprite.getPosition().x + this->sprite.getGlobalBounds().width * 2.f,
+				this->sprite.getPosition().y - (this->ultCurrentFrame.height));
+		}
+		else if(movingLeft)
+		{
+			if (this->animationTimer.getElapsedTime().asMilliseconds() >= 100.f)
+			{
+				this->ultCurrentFrame.top = 0.f;
+				this->ultCurrentFrame.left += 256.f;
+				if (this->ultCurrentFrame.left >= 2560.f)
+				{
+					this->ultCurrentFrame.left = 0;
+					this->castULT = false;
+					this->isCastingULT = false;
+				}
+
+				this->animationTimer.restart();
+				this->ultSprite.setTextureRect(this->ultCurrentFrame);
+			}
+			this->ultSprite.setScale(-1.5f, 1.5f);
+			this->ultSprite.setOrigin(0.f, 0.f);
+			this->ultSprite.setPosition(this->sprite.getPosition().x - this->sprite.getGlobalBounds().width * 1.15f,
+				this->sprite.getPosition().y - (this->ultCurrentFrame.height));
+		}
 	}
 
 	
@@ -197,6 +337,7 @@ void Player::updateAnimations()
 void Player::update()
 {
 	this->updateMovement();
+	this->updateAttack();
 	this->updateAnimations();
 	this->updatePhysics();
 }
@@ -204,4 +345,8 @@ void Player::update()
 void Player::render(sf::RenderTarget& target)
 {
 	target.draw(this->sprite);
+	if (this->castULT)
+	{
+		target.draw(this->ultSprite);
+	}
 }
