@@ -182,16 +182,24 @@ void Player::updateMovement()
 		this->jump();
 		this->canJump = false;
 	}
-
 }
 
 void Player::updateAttack()
 {
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Num4) && !this->castULT)
+	//Basic attack
+
+
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Num4) 
+		&& !this->castULT && !this->isCastingULT 
+		&& this->ultTimer.asSeconds() >= 2.f)
 	{
+		this->ultClock.restart();
+
 		this->animState = ULT;
 		this->isCastingULT = true;
 	}
+	this->ultTimer = ultClock.getElapsedTime();
+	std::cout << "Ult timer: " << this->ultTimer.asSeconds() << " sekund" << std::endl;
 }
 
 void Player::updateAnimations()

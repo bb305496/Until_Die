@@ -11,6 +11,8 @@ private:
 	sf::Sprite sprite;
 	sf::Sprite ultSprite;
 	sf::Clock animationTimer;
+	sf::Clock ultClock;
+	sf::Time ultTimer;
 
 	//Animation
 	short animState;
@@ -22,6 +24,7 @@ private:
 	bool isCastingULT;
 	bool movingLeft;
 	bool movingRight;
+	bool canMove;
 
 	//Physics
 	sf::Vector2f velocity;
