@@ -1,30 +1,37 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 
-enum PLAYER_ANIMATIONS_STATES {IDLE = 0, MOVING_LEFT, MOVING_RIGHT, JUMPING, FALLING, ULT};
+enum PLAYER_ANIMATIONS_STATES {IDLE = 0, MOVING_LEFT, MOVING_RIGHT, JUMPING, FALLING, TORNADO, ULT};
 
 class Player
 {
 private:
 	sf::Texture texture;
 	sf::Texture ultTexture;
+	sf::Texture tornadoTexture;
 	sf::Sprite sprite;
 	sf::Sprite ultSprite;
+	sf::Sprite tornadoSprite;
 	sf::Clock animationTimer;
 	sf::Clock ultClock;
 	sf::Time ultTimer;
+	sf::Clock tornadoClock;
+	sf::Time tornadoTimer;
 
 	//Animation
 	short animState;
 	sf::IntRect currentFrame;
 	sf::IntRect ultCurrentFrame;
+	sf::IntRect tornadoCurrentFrame;
 	bool animationSwitch;
 	bool canJump;
 	bool castULT;
 	bool isCastingULT;
+	bool castTornado;
+	bool isCastingTornado;
 	bool movingLeft;
 	bool movingRight;
-	bool canMove;
+	bool canCastSpeel;
 
 	//Physics
 	sf::Vector2f velocity;

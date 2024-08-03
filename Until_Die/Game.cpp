@@ -103,6 +103,7 @@ void Game::update()
 	this->updateCollision();
 
 	this->updateTileMap();
+
 }
 
 void Game::renderPlayer()
