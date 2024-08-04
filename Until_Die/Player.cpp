@@ -7,8 +7,11 @@ void Player::initVariables()
 	this->canJump = true;
 	this->castULT = false;
 	this->isCastingULT = false;
+	this->castTornado = false;
+	this->isCastingTornado = false;
 	this->movingLeft = false;
 	this->movingRight = false;
+	this->canCastSpeel = true;
 }
 
 void Player::initTexture()
@@ -21,6 +24,11 @@ void Player::initTexture()
 	if(!this->ultTexture.loadFromFile("Textures/Sprites/Main/ULT.png"))
 	{
 		std::cout << "ERROR::PLAYER::COULD NOT LOAD THE ULT TEXTURE" << "\n";
+	}
+
+	if (!this->tornadoTexture.loadFromFile("Textures/Sprites/Main/Tornado.png"))
+	{
+		std::cout << "ERROR::PLAYER::COULD NOT LOAD THE TORNADO TEXTURE" << "\n";
 	}
 }
 
@@ -37,6 +45,11 @@ void Player::initSprite()
 	this->ultCurrentFrame = sf::IntRect(0, 0, 256, 210);
 	this->ultSprite.setTextureRect(this->ultCurrentFrame);
 	this->ultSprite.setScale(1.5f, 1.5f);
+
+	this->tornadoSprite.setTexture(this->tornadoTexture);
+	this->tornadoCurrentFrame = sf::IntRect(0, 0, 80, 100);
+	this->tornadoSprite.setTextureRect(this->tornadoCurrentFrame);
+	this->tornadoSprite.setScale(1.5f, 1.5f);
 }
 
 void Player::initAnimations()
@@ -160,6 +173,10 @@ void Player::updateMovement()
 	if (this->isCastingULT)
 		return;
 
+	if (this->isCastingTornado)
+		return;
+
+
 	this->animState = IDLE;
 
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::A))
@@ -186,20 +203,34 @@ void Player::updateMovement()
 
 void Player::updateAttack()
 {
-	//Basic attack
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Num2)
+		&& !this->castTornado && !this->isCastingTornado
+		&& this->tornadoTimer.asSeconds() >= 1.f
+		&& this->canCastSpeel)
+	{
+		this->tornadoClock.restart();
 
-
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Num4) 
+		this->animState = TORNADO;
+		this->isCastingTornado = true;
+		this->canCastSpeel = false;
+	}
+	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Num3) 
 		&& !this->castULT && !this->isCastingULT 
-		&& this->ultTimer.asSeconds() >= 2.f)
+		&& this->ultTimer.asSeconds() >= 1.f
+		&& this->canCastSpeel)
 	{
 		this->ultClock.restart();
 
 		this->animState = ULT;
 		this->isCastingULT = true;
+		this->canCastSpeel = false;
 	}
-	this->ultTimer = ultClock.getElapsedTime();
-	std::cout << "Ult timer: " << this->ultTimer.asSeconds() << " sekund" << std::endl;
+	//std::cout << "Basic attack timer: " << this->basicAttackTimer.asSeconds() << " sekund" << std::endl;
+	this->ultTimer = this->ultClock.getElapsedTime();
+	//std::cout << "Ult timer: " << this->ultTimer.asSeconds() << " sekund" << std::endl;
+	this->tornadoTimer = this->tornadoClock.getElapsedTime();
+	//std::cout << "Tornado timer: " << this->tornadoTimer.asSeconds() << " sekund" << std::endl;
+
 }
 
 void Player::updateAnimations()
@@ -247,11 +278,58 @@ void Player::updateAnimations()
 		this->sprite.setScale(-1.5f, 1.5f);
 		this->sprite.setOrigin(this->sprite.getGlobalBounds().width / 1.5f, 0.f);
 	}
-	else if (this->animState == ULT && !this->castULT)
+	else if (this->animState == TORNADO && !this->castTornado || this->getAnimSwitch())
 	{
 		if (movingRight)
 		{
+			this->tornadoSprite.setPosition(this->sprite.getPosition().x + this->sprite.getGlobalBounds().width,
+				this->sprite.getPosition().y - (this->currentFrame.height / 1.5f));
 			if (this->animationTimer.getElapsedTime().asMilliseconds() >= 190.f || this->getAnimSwitch())
+			{
+				this->currentFrame.top = 225.f;
+				this->currentFrame.left += 56.f;
+				if (this->currentFrame.left >= 392.f)
+				{
+					this->currentFrame.left = 0;
+					this->animState = IDLE;
+					this->castTornado = true;
+				}
+
+				this->animationTimer.restart();
+				this->sprite.setTextureRect(this->currentFrame);
+			}
+			this->sprite.setScale(1.5f, 1.5f);
+			this->sprite.setOrigin(0.f, 0.f);
+		}
+		else if (movingLeft)
+		{
+			this->tornadoSprite.setPosition(this->sprite.getPosition().x,
+				this->sprite.getPosition().y - (this->currentFrame.height / 1.5f));
+			if (this->animationTimer.getElapsedTime().asMilliseconds() >= 190.f || this->getAnimSwitch())
+			{
+				this->currentFrame.top = 225.f;
+				this->currentFrame.left += 56.f;
+				if (this->currentFrame.left >= 392.f)
+				{
+					this->currentFrame.left = 0;
+					this->animState = IDLE;
+					this->castTornado = true;
+				}
+
+				this->animationTimer.restart();
+				this->sprite.setTextureRect(this->currentFrame);
+			}
+			this->sprite.setScale(-1.5f, 1.5f);
+			this->sprite.setOrigin(this->sprite.getGlobalBounds().width / 1.5f, 0.f);
+		}
+	}
+	else if (this->animState == ULT && !this->castULT || this->getAnimSwitch())
+	{
+		if (movingRight)
+		{
+			this->ultSprite.setPosition(this->sprite.getPosition().x + this->sprite.getGlobalBounds().width,
+				this->sprite.getPosition().y - (this->ultCurrentFrame.height));
+			if (this->animationTimer.getElapsedTime().asMilliseconds() >= 190.f)
 			{
 				this->currentFrame.top = 150.f;
 				this->currentFrame.left += 56.f;
@@ -270,6 +348,9 @@ void Player::updateAnimations()
 		}
 		else if (movingLeft)
 		{
+			this->ultSprite.setPosition(this->sprite.getPosition().x,
+				this->sprite.getPosition().y - (this->ultCurrentFrame.height));
+
 			if (this->animationTimer.getElapsedTime().asMilliseconds() >= 190.f || this->getAnimSwitch())
 			{
 				this->currentFrame.top = 150.f;
@@ -295,9 +376,10 @@ void Player::updateAnimations()
 
 	if (this->castULT)
 	{
+		float ultSpeed = 30.f;
 		if (movingRight)
 		{
-			if (this->animationTimer.getElapsedTime().asMilliseconds() >= 100.f)
+			if (this->animationTimer.getElapsedTime().asMilliseconds() >= 70.f)
 			{
 				this->ultCurrentFrame.top = 0.f;
 				this->ultCurrentFrame.left += 256.f;
@@ -306,15 +388,15 @@ void Player::updateAnimations()
 					this->ultCurrentFrame.left = 0;
 					this->castULT = false;
 					this->isCastingULT = false;
+					this->canCastSpeel = true;
 				}
 
 				this->animationTimer.restart();
 				this->ultSprite.setTextureRect(this->ultCurrentFrame);
+				this->ultSprite.move(ultSpeed, 0.f);
 			}
 			this->ultSprite.setScale(1.5f, 1.5f);
 			this->ultSprite.setOrigin(0.f, 0.f);
-			this->ultSprite.setPosition(this->sprite.getPosition().x + this->sprite.getGlobalBounds().width * 2.f,
-				this->sprite.getPosition().y - (this->ultCurrentFrame.height));
 		}
 		else if(movingLeft)
 		{
@@ -327,15 +409,61 @@ void Player::updateAnimations()
 					this->ultCurrentFrame.left = 0;
 					this->castULT = false;
 					this->isCastingULT = false;
+					this->canCastSpeel = true;
 				}
 
 				this->animationTimer.restart();
 				this->ultSprite.setTextureRect(this->ultCurrentFrame);
+				this->ultSprite.move(-ultSpeed, 0.f);
 			}
 			this->ultSprite.setScale(-1.5f, 1.5f);
 			this->ultSprite.setOrigin(0.f, 0.f);
-			this->ultSprite.setPosition(this->sprite.getPosition().x - this->sprite.getGlobalBounds().width * 1.15f,
-				this->sprite.getPosition().y - (this->ultCurrentFrame.height));
+		}
+	}
+	else if (this->castTornado)
+	{
+		float tornadoSpeed = 20.f;
+		if (movingRight)
+		{
+			if (this->animationTimer.getElapsedTime().asMilliseconds() >= 100.f)
+			{
+				this->tornadoCurrentFrame.top = 0.f;
+				this->tornadoCurrentFrame.left += 80.f;
+				if (this->tornadoCurrentFrame.left >= 960.f)
+				{
+					this->tornadoCurrentFrame.left = 0;
+					this->castTornado = false;
+					this->isCastingTornado = false;
+					this->canCastSpeel = true;
+				}
+
+				this->animationTimer.restart();
+				this->tornadoSprite.setTextureRect(this->tornadoCurrentFrame);
+				this->tornadoSprite.move(tornadoSpeed, 0.f);
+			}
+			this->tornadoSprite.setScale(1.5f, 1.5f);
+			this->tornadoSprite.setOrigin(0.f, 0.f);
+		}
+		else if (movingLeft)
+		{
+			if (this->animationTimer.getElapsedTime().asMilliseconds() >= 100.f)
+			{
+				this->tornadoCurrentFrame.top = 0.f;
+				this->tornadoCurrentFrame.left += 80.f;
+				if (this->tornadoCurrentFrame.left >= 960.f)
+				{
+					this->tornadoCurrentFrame.left = 0;
+					this->castTornado = false;
+					this->isCastingTornado = false;
+					this->canCastSpeel = true;
+				}
+
+				this->animationTimer.restart();
+				this->tornadoSprite.setTextureRect(this->tornadoCurrentFrame);
+				this->tornadoSprite.move(-tornadoSpeed, 0.f);
+			}
+			this->tornadoSprite.setScale(-1.5f, 1.5f);
+			this->tornadoSprite.setOrigin(0.f, 0.f);
 		}
 	}
 
@@ -353,8 +481,13 @@ void Player::update()
 void Player::render(sf::RenderTarget& target)
 {
 	target.draw(this->sprite);
+
 	if (this->castULT)
 	{
 		target.draw(this->ultSprite);
+	}
+	if (this->castTornado)
+	{
+		target.draw(this->tornadoSprite);
 	}
 }
