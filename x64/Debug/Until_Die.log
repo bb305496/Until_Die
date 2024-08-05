@@ -1,0 +1,81 @@
+﻿  stdafx.cpp
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\stdafx.h(6,10): error C1083: Nie można otworzyć pliku dołącz: 'SFML/Graphics.hpp': No such file or directory
+  (kompilowanie pliku źródłowego „stdafx.cpp”)
+  
+
+Podsumowanie wydajności projektu:
+      758 ms  C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die.vcxproj — wywołań:   1
+                758 ms  Build                                    — wywołań:   1
+
+Podsumowanie wydajności elementu docelowego:
+        0 ms  BeforeBuildGenerateSources               — wywołań:   1
+        0 ms  ComputeReferenceCLInput                  — wywołań:   1
+        0 ms  BuildGenerateSourcesTraverse             — wywołań:   1
+        0 ms  SelectClCompile                          — wywołań:   1
+        0 ms  PreBuildEvent                            — wywołań:   1
+        0 ms  SelectCustomBuild                        — wywołań:   1
+        0 ms  ComputeCustomBuildOutput                 — wywołań:   1
+        0 ms  CopyFileToFolders                        — wywołań:   1
+        0 ms  _Xsd                                     — wywołań:   1
+        0 ms  ComputeMIDLGeneratedCompileInputs        — wywołań:   1
+        0 ms  AfterMidl                                — wywołań:   1
+        0 ms  _Midl                                    — wywołań:   1
+        0 ms  AfterBuildGenerateSources                — wywołań:   1
+        0 ms  AfterBuildGenerateSourcesEvent           — wywołań:   1
+        0 ms  _BuildGenerateSourcesAction              — wywołań:   1
+        0 ms  BuildGenerateSources                     — wywołań:   1
+        0 ms  BuildCompileTraverse                     — wywołań:   1
+        0 ms  BeforeClCompile                          — wywołań:   1
+        0 ms  ComputeCLInputPDBName                    — wywołań:   1
+        0 ms  GetReferencedVCProjectsInfo              — wywołań:   1
+        0 ms  AfterResolveReferences                   — wywołań:   1
+        0 ms  ResolveAssemblyReferences                — wywołań:   1
+        0 ms  ResolveReferences                        — wywołań:   1
+        0 ms  ResolveSDKReferences                     — wywołań:   1
+        0 ms  _PrepareForReferenceResolution           — wywołań:   1
+        0 ms  BeforeResolveReferences                  — wywołań:   1
+        0 ms  IgnoreJavaScriptOutputAssembly           — wywołań:   1
+        0 ms  _SplitProjectReferencesByFileExistence   — wywołań:   1
+        0 ms  _AddOutputPathToGlobalPropertiesToRemove — wywołań:   1
+        0 ms  PrepareProjectReferences                 — wywołań:   1
+        0 ms  ExpandSDKReferences                      — wywołań:   1
+        0 ms  GetFrameworkPaths                        — wywołań:   1
+        0 ms  GetReferenceAssemblyPaths                — wywołań:   1
+        0 ms  ResolveProjectReferences                 — wywołań:   1
+        0 ms  SetBuildDefaultEnvironmentVariables      — wywołań:   1
+        0 ms  GetResolvedWinMD                         — wywołań:   1
+        0 ms  SetCABuildNativeEnvironmentVariables     — wywołań:   1
+        0 ms  WarnCompileDuplicatedFilename            — wywołań:   1
+        1 ms  AddExternalIncludDirectoriesToPaths      — wywołań:   1
+        1 ms  MakeDirsForCl                            — wywołań:   1
+        1 ms  FixupCLCompileOptions                    — wywołań:   1
+        1 ms  _SelectedFiles                           — wywołań:   1
+        1 ms  FindReferenceAssembliesForReferences     — wywołań:   1
+        1 ms  AssignProjectConfiguration               — wywołań:   1
+        1 ms  ComputeStdModulesCompileInputs           — wywołań:   1
+        1 ms  _PrepareForBuild                         — wywołań:   1
+        2 ms  InitializeBuildStatus                    — wywołań:   1
+        5 ms  SetTelemetryEnvironmentVariables         — wywołań:   1
+        5 ms  CustomBuild                              — wywołań:   1
+        7 ms  PrepareForBuild                          — wywołań:   1
+        7 ms  _CheckForInvalidConfigurationAndPlatform — wywołań:   1
+        8 ms  _CheckWindowsSDKInstalled                — wywołań:   1
+        8 ms  MakeDirsForMidl                          — wywołań:   1
+       29 ms  _GetProjectReferenceTargetFrameworkProperties — wywołań:   1
+      676 ms  ClCompile                                — wywołań:   1
+
+Podsumowanie wydajności zadania:
+        0 ms  Message                                  — wywołań:   2
+        0 ms  MSBuild                                  — wywołań:   1
+        0 ms  SetRidAgnosticValueForProjects           — wywołań:   1
+        0 ms  ReadLinesFromFile                        — wywołań:   1
+        0 ms  WriteLinesToFile                         — wywołań:   1
+        0 ms  Touch                                    — wywołań:   1
+        1 ms  SetEnv                                   — wywołań:  11
+        1 ms  Delete                                   — wywołań:   1
+        1 ms  AssignProjectConfiguration               — wywołań:   1
+        2 ms  CheckVCToolsetVersion                    — wywołań:   1
+        2 ms  VCMessage                                — wywołań:   1
+        5 ms  GetOutOfDateItems                        — wywołań:   3
+        9 ms  MakeDir                                  — wywołań:   5
+      673 ms  CL                                       — wywołań:   1
