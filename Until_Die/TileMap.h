@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Tile.h"
+#include "Player.h"
 
 class TileMap
 {
@@ -8,6 +9,9 @@ private:
 	std::vector<std::vector<Tile*>> tiles;
 	sf::Texture* tileSheet;
 	unsigned tileSize;
+	sf::FloatRect tileBounds;
+
+	sf::FloatRect playerBounds;
 
 public:
 	TileMap();
@@ -15,6 +19,8 @@ public:
 	~TileMap();
 
 	inline const unsigned& getTileSize() const { return this->tileSize; };
+
+	void checkPlayerCollision(Player* player);
 
 	void addTile(unsigned x, unsigned y);
 	void removeTile(unsigned x, unsigned y);

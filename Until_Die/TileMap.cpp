@@ -31,6 +31,32 @@ TileMap::~TileMap()
 	}
 }
 
+void TileMap::checkPlayerCollision(Player* player)
+{
+	this->playerBounds = player->getGlobalBounds(); 
+
+	for (int i = 0; i < this->tiles.size(); i++)
+	{
+		for (int k = 0; k < this->tiles[i].size(); k++)
+		{
+			Tile* tile = this->tiles[i][k];
+
+			if (tile != nullptr)
+			{
+				this->tileBounds = tile->getGlobalBounds();
+
+				if (playerBounds.intersects(tileBounds))
+				{
+
+					player->setPosition(player->getPosition().x, tileBounds.top - player->getGlobalBounds().height);
+					player->resetVelocityY();
+					player->setCanJump();
+				}
+			}
+		}
+	}
+}
+
 void TileMap::addTile(unsigned x, unsigned y)
 {
 	if (x < this->tiles.size() && x >= 0)

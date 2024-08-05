@@ -58,6 +58,7 @@ public:
 	
 	void setPosition(const float x, const float y);
 	void resetVelocityY();
+	void resetVelocityX();
 
 	bool getCanJump();
 	void setCanJump();
@@ -65,11 +66,11 @@ public:
 	void resetAnimationTimer();
 	void move(const float dir_x, const float dir_y);
 	void jump();
-	void updatePhysics();
+	void updatePhysics(float deltaTime);
 	void updateMovement();
 	void updateAttack();
 	void updateAnimations();
-	void update();
+	void update(float deltaTime);
 	void render(sf::RenderTarget& target);
 };
 

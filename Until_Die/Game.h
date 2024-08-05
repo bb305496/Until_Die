@@ -8,16 +8,30 @@ class Game
 {
 private:
 	sf::RenderWindow window;
+	float windowLeft;
 	sf::Event event;
-	sf::Texture tileSheet1;
+	sf::Texture grassTile;
+	sf::Texture grass;
+
+	sf::Texture bgTexture;
+	sf::Sprite bgSprite;
+
+	sf::Clock clock;
+	float deltaTime;
 
 	Player* player;
+	sf::FloatRect playerBounds;
+
 	TileMap* tileMap;
+	TileMap* grassMap;
+
+
 
 	void initWindow();
 	void initTileSheet();
 	void initPlayer();
 	void initTileMap();
+	void initBg();
 
 public:
 	Game();
@@ -32,6 +46,7 @@ public:
 
 	void renderPlayer();
 	void renderTileMap();
+	void renderGrass();
 	void render();
 };
 

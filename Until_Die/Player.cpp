@@ -60,12 +60,12 @@ void Player::initAnimations()
 
 void Player::initPhysics()
 {
-	this->velocityMax = 10.f;
+	this->velocityMax = 28.f;
 	this->velocityMin = 1.f;
 	this->acceleration = 0.9f;
-	this->drag = 0.90f;
-	this->gravity = 2.5f;
-	this->velocityMaxY = 45.f;
+	this->drag = 0.93f;
+	this->gravity = 9.8f;
+	this->velocityMaxY = 75.f;
 }
 
 Player::Player()
@@ -109,7 +109,12 @@ void Player::setPosition(const float x, const float y)
 
 void Player::resetVelocityY()
 {
-	this->velocity.y = 0;
+	this->velocity.y = 0.f;
+}
+
+void Player::resetVelocityX()
+{
+	this->velocity.x = 0.f;
 }
 
 bool Player::getCanJump()
@@ -145,10 +150,10 @@ void Player::jump()
 
 }
 
-void Player::updatePhysics()
+void Player::updatePhysics(float deltaTime)
 {
 	//Gravity
-	this->velocity.y += 1.0f * this->gravity;
+	this->velocity.y += this->gravity * deltaTime;
 	if (std::abs(this->velocity.y) > this->velocityMaxY)
 	{
 		this->velocity.y = this->velocityMaxY * ((this->velocity.y < 0.f) ? -1.f : 1.f);
@@ -165,7 +170,7 @@ void Player::updatePhysics()
 		this->velocity.y = 0.f;
 	}
 
-	this->sprite.move(this->velocity);
+	this->sprite.move(this->velocity * deltaTime);
 }
 
 void Player::updateMovement()
@@ -328,7 +333,7 @@ void Player::updateAnimations()
 		if (movingRight)
 		{
 			this->ultSprite.setPosition(this->sprite.getPosition().x + this->sprite.getGlobalBounds().width,
-				this->sprite.getPosition().y - (this->ultCurrentFrame.height));
+				this->sprite.getPosition().y - ((this->ultCurrentFrame.height)));
 			if (this->animationTimer.getElapsedTime().asMilliseconds() >= 190.f)
 			{
 				this->currentFrame.top = 150.f;
@@ -470,12 +475,12 @@ void Player::updateAnimations()
 	
 }
 
-void Player::update()
+void Player::update(float deltaTime)
 {
 	this->updateMovement();
 	this->updateAttack();
 	this->updateAnimations();
-	this->updatePhysics();
+	this->updatePhysics(deltaTime);
 }
 
 void Player::render(sf::RenderTarget& target)

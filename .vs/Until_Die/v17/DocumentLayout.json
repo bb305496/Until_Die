@@ -1,18 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Bartek\\Desktop\\Git\\Untill_Die_Platform\\Until_Die\\",
+  "WorkspaceRootPath": "C:\\Users\\Bartek\\Desktop\\Git\\Until_Die\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8DEA7FCE-15D6-4854-8B2E-73DD24E6E32B}|Until_Die\\Until_Die.vcxproj|C:\\Users\\Bartek\\Desktop\\Git\\Untill_Die_Platform\\Until_Die\\Until_Die\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{8DEA7FCE-15D6-4854-8B2E-73DD24E6E32B}|Until_Die\\Until_Die.vcxproj|C:\\Users\\Bartek\\Desktop\\Git\\Until_Die\\Until_Die\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{8DEA7FCE-15D6-4854-8B2E-73DD24E6E32B}|Until_Die\\Until_Die.vcxproj|solutionrelative:Until_Die\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8DEA7FCE-15D6-4854-8B2E-73DD24E6E32B}|Until_Die\\Until_Die.vcxproj|C:\\Users\\Bartek\\Desktop\\Git\\Untill_Die_Platform\\Until_Die\\Until_Die\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{8DEA7FCE-15D6-4854-8B2E-73DD24E6E32B}|Until_Die\\Until_Die.vcxproj|solutionrelative:Until_Die\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{8DEA7FCE-15D6-4854-8B2E-73DD24E6E32B}|Until_Die\\Until_Die.vcxproj|C:\\Users\\Bartek\\Desktop\\Git\\Until_Die\\Until_Die\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8DEA7FCE-15D6-4854-8B2E-73DD24E6E32B}|Until_Die\\Until_Die.vcxproj|solutionrelative:Until_Die\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8DEA7FCE-15D6-4854-8B2E-73DD24E6E32B}|Until_Die\\Until_Die.vcxproj|C:\\Users\\Bartek\\Desktop\\Git\\Untill_Die_Platform\\Until_Die\\Until_Die\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{8DEA7FCE-15D6-4854-8B2E-73DD24E6E32B}|Until_Die\\Until_Die.vcxproj|solutionrelative:Until_Die\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{8DEA7FCE-15D6-4854-8B2E-73DD24E6E32B}|Until_Die\\Until_Die.vcxproj|C:\\Users\\Bartek\\Desktop\\Git\\Until_Die\\Until_Die\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8DEA7FCE-15D6-4854-8B2E-73DD24E6E32B}|Until_Die\\Until_Die.vcxproj|solutionrelative:Until_Die\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,39 +34,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Game.cpp",
-              "DocumentMoniker": "C:\\Users\\Bartek\\Desktop\\Git\\Untill_Die_Platform\\Until_Die\\Until_Die\\Game.cpp",
-              "RelativeDocumentMoniker": "Until_Die\\Game.cpp",
-              "ToolTip": "C:\\Users\\Bartek\\Desktop\\Git\\Untill_Die_Platform\\Until_Die\\Until_Die\\Game.cpp",
-              "RelativeToolTip": "Until_Die\\Game.cpp",
-              "ViewState": "AQIAAF0AAAAAAAAAAAAIwGgAAAAXAAAA",
+              "DocumentIndex": 0,
+              "Title": "Player.cpp",
+              "DocumentMoniker": "C:\\Users\\Bartek\\Desktop\\Git\\Until_Die\\Until_Die\\Player.cpp",
+              "RelativeDocumentMoniker": "Until_Die\\Player.cpp",
+              "ToolTip": "C:\\Users\\Bartek\\Desktop\\Git\\Until_Die\\Until_Die\\Player.cpp",
+              "RelativeToolTip": "Until_Die\\Player.cpp",
+              "ViewState": "AQIAAAIBAAAAAAAAAAAAABkBAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-08-03T15:53:11.205Z"
+              "WhenOpened": "2024-08-05T13:41:29.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Game.h",
+              "DocumentMoniker": "C:\\Users\\Bartek\\Desktop\\Git\\Until_Die\\Until_Die\\Game.h",
+              "RelativeDocumentMoniker": "Until_Die\\Game.h",
+              "ToolTip": "C:\\Users\\Bartek\\Desktop\\Git\\Until_Die\\Until_Die\\Game.h",
+              "RelativeToolTip": "Until_Die\\Game.h",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAADAAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-08-05T13:01:27.318Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Player.h",
-              "DocumentMoniker": "C:\\Users\\Bartek\\Desktop\\Git\\Untill_Die_Platform\\Until_Die\\Until_Die\\Player.h",
-              "RelativeDocumentMoniker": "Until_Die\\Player.h",
-              "ToolTip": "C:\\Users\\Bartek\\Desktop\\Git\\Untill_Die_Platform\\Until_Die\\Until_Die\\Player.h",
-              "RelativeToolTip": "Until_Die\\Player.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAABkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-07-28T10:38:21.16Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Player.cpp",
-              "DocumentMoniker": "C:\\Users\\Bartek\\Desktop\\Git\\Untill_Die_Platform\\Until_Die\\Until_Die\\Player.cpp",
-              "RelativeDocumentMoniker": "Until_Die\\Player.cpp",
-              "ToolTip": "C:\\Users\\Bartek\\Desktop\\Git\\Untill_Die_Platform\\Until_Die\\Until_Die\\Player.cpp",
-              "RelativeToolTip": "Until_Die\\Player.cpp",
-              "ViewState": "AQIAACQAAAAAAAAAAAAAAC8AAAAAAAAA",
+              "Title": "Game.cpp",
+              "DocumentMoniker": "C:\\Users\\Bartek\\Desktop\\Git\\Until_Die\\Until_Die\\Game.cpp",
+              "RelativeDocumentMoniker": "Until_Die\\Game.cpp",
+              "ToolTip": "C:\\Users\\Bartek\\Desktop\\Git\\Until_Die\\Until_Die\\Game.cpp",
+              "RelativeToolTip": "Until_Die\\Game.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-07-28T10:38:20.582Z",
+              "WhenOpened": "2024-08-05T13:01:26.618Z",
               "EditorCaption": ""
             }
           ]
