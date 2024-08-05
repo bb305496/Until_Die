@@ -1,185 +1,181 @@
 ﻿  Player.cpp
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(242,29): warning C4244: "=": konwersja z "float" do "T", możliwa utrata danych
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(242,29): warning C4244:         with
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(242,29): warning C4244:         [
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(242,29): warning C4244:             T=int
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(242,29): warning C4244:         ]
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(242,29): warning C4244: "=": konwersja z "float" do "T", możliwa utrata danych
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(242,29): warning C4244:         with
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(242,29): warning C4244:         [
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(242,29): warning C4244:             T=int
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(242,29): warning C4244:         ]
   (kompilowanie pliku źródłowego „/Player.cpp”)
   
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(243,31): warning C4244: "+=": konwersja z "float" do "T", możliwa utrata danych
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(243,31): warning C4244:         with
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(243,31): warning C4244:         [
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(243,31): warning C4244:             T=int
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(243,31): warning C4244:         ]
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(243,31): warning C4244: "+=": konwersja z "float" do "T", możliwa utrata danych
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(243,31): warning C4244:         with
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(243,31): warning C4244:         [
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(243,31): warning C4244:             T=int
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(243,31): warning C4244:         ]
   (kompilowanie pliku źródłowego „/Player.cpp”)
   
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(255,29): warning C4244: "=": konwersja z "float" do "T", możliwa utrata danych
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(255,29): warning C4244:         with
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(255,29): warning C4244:         [
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(255,29): warning C4244:             T=int
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(255,29): warning C4244:         ]
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(255,29): warning C4244: "=": konwersja z "float" do "T", możliwa utrata danych
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(255,29): warning C4244:         with
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(255,29): warning C4244:         [
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(255,29): warning C4244:             T=int
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(255,29): warning C4244:         ]
   (kompilowanie pliku źródłowego „/Player.cpp”)
   
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(256,31): warning C4244: "+=": konwersja z "float" do "T", możliwa utrata danych
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(256,31): warning C4244:         with
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(256,31): warning C4244:         [
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(256,31): warning C4244:             T=int
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(256,31): warning C4244:         ]
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(256,31): warning C4244: "+=": konwersja z "float" do "T", możliwa utrata danych
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(256,31): warning C4244:         with
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(256,31): warning C4244:         [
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(256,31): warning C4244:             T=int
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(256,31): warning C4244:         ]
   (kompilowanie pliku źródłowego „/Player.cpp”)
   
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(270,29): warning C4244: "=": konwersja z "float" do "T", możliwa utrata danych
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(270,29): warning C4244:         with
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(270,29): warning C4244:         [
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(270,29): warning C4244:             T=int
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(270,29): warning C4244:         ]
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(270,29): warning C4244: "=": konwersja z "float" do "T", możliwa utrata danych
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(270,29): warning C4244:         with
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(270,29): warning C4244:         [
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(270,29): warning C4244:             T=int
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(270,29): warning C4244:         ]
   (kompilowanie pliku źródłowego „/Player.cpp”)
   
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(271,31): warning C4244: "+=": konwersja z "float" do "T", możliwa utrata danych
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(271,31): warning C4244:         with
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(271,31): warning C4244:         [
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(271,31): warning C4244:             T=int
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(271,31): warning C4244:         ]
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(271,31): warning C4244: "+=": konwersja z "float" do "T", możliwa utrata danych
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(271,31): warning C4244:         with
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(271,31): warning C4244:         [
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(271,31): warning C4244:             T=int
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(271,31): warning C4244:         ]
   (kompilowanie pliku źródłowego „/Player.cpp”)
   
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(289,30): warning C4244: "=": konwersja z "float" do "T", możliwa utrata danych
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(289,30): warning C4244:         with
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(289,30): warning C4244:         [
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(289,30): warning C4244:             T=int
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(289,30): warning C4244:         ]
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(289,30): warning C4244: "=": konwersja z "float" do "T", możliwa utrata danych
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(289,30): warning C4244:         with
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(289,30): warning C4244:         [
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(289,30): warning C4244:             T=int
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(289,30): warning C4244:         ]
   (kompilowanie pliku źródłowego „/Player.cpp”)
   
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(290,32): warning C4244: "+=": konwersja z "float" do "T", możliwa utrata danych
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(290,32): warning C4244:         with
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(290,32): warning C4244:         [
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(290,32): warning C4244:             T=int
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(290,32): warning C4244:         ]
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(290,32): warning C4244: "+=": konwersja z "float" do "T", możliwa utrata danych
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(290,32): warning C4244:         with
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(290,32): warning C4244:         [
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(290,32): warning C4244:             T=int
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(290,32): warning C4244:         ]
   (kompilowanie pliku źródłowego „/Player.cpp”)
   
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(310,30): warning C4244: "=": konwersja z "float" do "T", możliwa utrata danych
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(310,30): warning C4244:         with
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(310,30): warning C4244:         [
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(310,30): warning C4244:             T=int
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(310,30): warning C4244:         ]
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(310,30): warning C4244: "=": konwersja z "float" do "T", możliwa utrata danych
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(310,30): warning C4244:         with
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(310,30): warning C4244:         [
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(310,30): warning C4244:             T=int
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(310,30): warning C4244:         ]
   (kompilowanie pliku źródłowego „/Player.cpp”)
   
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(311,32): warning C4244: "+=": konwersja z "float" do "T", możliwa utrata danych
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(311,32): warning C4244:         with
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(311,32): warning C4244:         [
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(311,32): warning C4244:             T=int
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(311,32): warning C4244:         ]
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(311,32): warning C4244: "+=": konwersja z "float" do "T", możliwa utrata danych
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(311,32): warning C4244:         with
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(311,32): warning C4244:         [
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(311,32): warning C4244:             T=int
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(311,32): warning C4244:         ]
   (kompilowanie pliku źródłowego „/Player.cpp”)
   
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(334,30): warning C4244: "=": konwersja z "float" do "T", możliwa utrata danych
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(334,30): warning C4244:         with
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(334,30): warning C4244:         [
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(334,30): warning C4244:             T=int
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(334,30): warning C4244:         ]
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(334,30): warning C4244: "=": konwersja z "float" do "T", możliwa utrata danych
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(334,30): warning C4244:         with
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(334,30): warning C4244:         [
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(334,30): warning C4244:             T=int
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(334,30): warning C4244:         ]
   (kompilowanie pliku źródłowego „/Player.cpp”)
   
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(335,32): warning C4244: "+=": konwersja z "float" do "T", możliwa utrata danych
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(335,32): warning C4244:         with
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(335,32): warning C4244:         [
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(335,32): warning C4244:             T=int
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(335,32): warning C4244:         ]
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(335,32): warning C4244: "+=": konwersja z "float" do "T", możliwa utrata danych
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(335,32): warning C4244:         with
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(335,32): warning C4244:         [
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(335,32): warning C4244:             T=int
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(335,32): warning C4244:         ]
   (kompilowanie pliku źródłowego „/Player.cpp”)
   
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(338,32): warning C4244: "=": konwersja z "float" do "T", możliwa utrata danych
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(338,32): warning C4244:         with
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(338,32): warning C4244:         [
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(338,32): warning C4244:             T=int
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(338,32): warning C4244:         ]
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(338,32): warning C4244: "=": konwersja z "float" do "T", możliwa utrata danych
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(338,32): warning C4244:         with
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(338,32): warning C4244:         [
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(338,32): warning C4244:             T=int
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(338,32): warning C4244:         ]
   (kompilowanie pliku źródłowego „/Player.cpp”)
   
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(356,30): warning C4244: "=": konwersja z "float" do "T", możliwa utrata danych
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(356,30): warning C4244:         with
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(356,30): warning C4244:         [
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(356,30): warning C4244:             T=int
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(356,30): warning C4244:         ]
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(356,30): warning C4244: "=": konwersja z "float" do "T", możliwa utrata danych
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(356,30): warning C4244:         with
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(356,30): warning C4244:         [
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(356,30): warning C4244:             T=int
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(356,30): warning C4244:         ]
   (kompilowanie pliku źródłowego „/Player.cpp”)
   
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(357,32): warning C4244: "+=": konwersja z "float" do "T", możliwa utrata danych
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(357,32): warning C4244:         with
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(357,32): warning C4244:         [
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(357,32): warning C4244:             T=int
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(357,32): warning C4244:         ]
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(357,32): warning C4244: "+=": konwersja z "float" do "T", możliwa utrata danych
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(357,32): warning C4244:         with
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(357,32): warning C4244:         [
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(357,32): warning C4244:             T=int
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(357,32): warning C4244:         ]
   (kompilowanie pliku źródłowego „/Player.cpp”)
   
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(360,32): warning C4244: "=": konwersja z "float" do "T", możliwa utrata danych
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(360,32): warning C4244:         with
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(360,32): warning C4244:         [
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(360,32): warning C4244:             T=int
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(360,32): warning C4244:         ]
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(360,32): warning C4244: "=": konwersja z "float" do "T", możliwa utrata danych
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(360,32): warning C4244:         with
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(360,32): warning C4244:         [
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(360,32): warning C4244:             T=int
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(360,32): warning C4244:         ]
   (kompilowanie pliku źródłowego „/Player.cpp”)
   
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(384,33): warning C4244: "=": konwersja z "float" do "T", możliwa utrata danych
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(384,33): warning C4244:         with
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(384,33): warning C4244:         [
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(384,33): warning C4244:             T=int
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(384,33): warning C4244:         ]
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(384,33): warning C4244: "=": konwersja z "float" do "T", możliwa utrata danych
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(384,33): warning C4244:         with
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(384,33): warning C4244:         [
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(384,33): warning C4244:             T=int
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(384,33): warning C4244:         ]
   (kompilowanie pliku źródłowego „/Player.cpp”)
   
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(385,35): warning C4244: "+=": konwersja z "float" do "T", możliwa utrata danych
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(385,35): warning C4244:         with
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(385,35): warning C4244:         [
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(385,35): warning C4244:             T=int
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(385,35): warning C4244:         ]
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(385,35): warning C4244: "+=": konwersja z "float" do "T", możliwa utrata danych
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(385,35): warning C4244:         with
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(385,35): warning C4244:         [
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(385,35): warning C4244:             T=int
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(385,35): warning C4244:         ]
   (kompilowanie pliku źródłowego „/Player.cpp”)
   
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(405,33): warning C4244: "=": konwersja z "float" do "T", możliwa utrata danych
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(405,33): warning C4244:         with
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(405,33): warning C4244:         [
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(405,33): warning C4244:             T=int
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(405,33): warning C4244:         ]
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(405,33): warning C4244: "=": konwersja z "float" do "T", możliwa utrata danych
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(405,33): warning C4244:         with
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(405,33): warning C4244:         [
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(405,33): warning C4244:             T=int
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(405,33): warning C4244:         ]
   (kompilowanie pliku źródłowego „/Player.cpp”)
   
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(406,35): warning C4244: "+=": konwersja z "float" do "T", możliwa utrata danych
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(406,35): warning C4244:         with
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(406,35): warning C4244:         [
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(406,35): warning C4244:             T=int
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(406,35): warning C4244:         ]
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(406,35): warning C4244: "+=": konwersja z "float" do "T", możliwa utrata danych
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(406,35): warning C4244:         with
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(406,35): warning C4244:         [
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(406,35): warning C4244:             T=int
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(406,35): warning C4244:         ]
   (kompilowanie pliku źródłowego „/Player.cpp”)
   
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(430,37): warning C4244: "=": konwersja z "float" do "T", możliwa utrata danych
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(430,37): warning C4244:         with
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(430,37): warning C4244:         [
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(430,37): warning C4244:             T=int
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(430,37): warning C4244:         ]
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(430,37): warning C4244: "=": konwersja z "float" do "T", możliwa utrata danych
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(430,37): warning C4244:         with
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(430,37): warning C4244:         [
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(430,37): warning C4244:             T=int
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(430,37): warning C4244:         ]
   (kompilowanie pliku źródłowego „/Player.cpp”)
   
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(431,39): warning C4244: "+=": konwersja z "float" do "T", możliwa utrata danych
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(431,39): warning C4244:         with
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(431,39): warning C4244:         [
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(431,39): warning C4244:             T=int
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(431,39): warning C4244:         ]
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(431,39): warning C4244: "+=": konwersja z "float" do "T", możliwa utrata danych
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(431,39): warning C4244:         with
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(431,39): warning C4244:         [
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(431,39): warning C4244:             T=int
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(431,39): warning C4244:         ]
   (kompilowanie pliku źródłowego „/Player.cpp”)
   
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(451,37): warning C4244: "=": konwersja z "float" do "T", możliwa utrata danych
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(451,37): warning C4244:         with
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(451,37): warning C4244:         [
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(451,37): warning C4244:             T=int
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(451,37): warning C4244:         ]
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(451,37): warning C4244: "=": konwersja z "float" do "T", możliwa utrata danych
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(451,37): warning C4244:         with
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(451,37): warning C4244:         [
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(451,37): warning C4244:             T=int
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(451,37): warning C4244:         ]
   (kompilowanie pliku źródłowego „/Player.cpp”)
   
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(452,39): warning C4244: "+=": konwersja z "float" do "T", możliwa utrata danych
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(452,39): warning C4244:         with
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(452,39): warning C4244:         [
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(452,39): warning C4244:             T=int
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(452,39): warning C4244:         ]
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(452,39): warning C4244: "+=": konwersja z "float" do "T", możliwa utrata danych
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(452,39): warning C4244:         with
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(452,39): warning C4244:         [
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(452,39): warning C4244:             T=int
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(452,39): warning C4244:         ]
   (kompilowanie pliku źródłowego „/Player.cpp”)
   
-  Until_Die.cpp
-  Generowanie kodu...
-C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Player.cpp(92,1): warning C4172: zwracanie adresu lokalnej zmiennej lub tymczasowej: anim_switch
-  Until_Die.vcxproj -> C:\Users\Bartek\Desktop\Git\Until_Die\Debug\Until_Die.exe
+C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Player.cpp(92,1): warning C4172: zwracanie adresu lokalnej zmiennej lub tymczasowej: anim_switch
+  Until_Die.vcxproj -> C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Debug\Until_Die.exe
 
 Podsumowanie wydajności projektu:
-      374 ms  C:\Users\Bartek\Desktop\Git\Until_Die\Until_Die\Until_Die.vcxproj — wywołań:   1
-                374 ms  Build                                    — wywołań:   1
+      526 ms  C:\Users\Bartek\Desktop\Git\Untill_Die_Platform\Until_Die\Until_Die\Until_Die.vcxproj — wywołań:   1
+                526 ms  Build                                    — wywołań:   1
 
 Podsumowanie wydajności elementu docelowego:
         0 ms  AfterBuildCompileEvent                   — wywołań:   1
-        0 ms  _ALink                                   — wywołań:   1
-        0 ms  _Link                                    — wywołań:   1
         0 ms  AfterLink                                — wywołań:   1
         0 ms  ComputeLinkSwitches                      — wywołań:   1
         0 ms  PreLinkEvent                             — wywołań:   1
@@ -189,8 +185,9 @@ Podsumowanie wydajności elementu docelowego:
         0 ms  SplitResourcesByCulture                  — wywołań:   1
         0 ms  ComputeManifestInputsTargets             — wywołań:   1
         0 ms  ComputeLinkInputsFromProject             — wywołań:   1
-        0 ms  _Manifest                                — wywołań:   1
         0 ms  ComputeCLGeneratedLinkInputs             — wywołań:   1
+        0 ms  ComputeCLOutputs                         — wywołań:   1
+        0 ms  ComputeManifestGeneratedLinkerInputs     — wywołań:   1
         0 ms  ComputeRCGeneratedLinkInputs             — wywołań:   1
         0 ms  ComputeRCOutputs                         — wywołań:   1
         0 ms  BeforeLink                               — wywołań:   1
@@ -202,11 +199,10 @@ Podsumowanie wydajności elementu docelowego:
         0 ms  AfterResourceCompile                     — wywołań:   1
         0 ms  MakeDirsForResourceCompile               — wywołań:   1
         0 ms  BeforeResourceCompile                    — wywołań:   1
-        0 ms  ComputeManifestGeneratedLinkerInputs     — wywołań:   1
-        0 ms  _ClCompile                               — wywołań:   1
+        0 ms  _Link                                    — wywołań:   1
+        0 ms  _ALink                                   — wywołań:   1
+        0 ms  _Manifest                                — wywołań:   1
         0 ms  RegisterOutput                           — wywołań:   1
-        0 ms  ComputeCLCompileGeneratedXDCFiles        — wywołań:   1
-        0 ms  IncrementalClean                         — wywołań:   1
         0 ms  AfterBuild                               — wywołań:   1
         0 ms  BuildLink                                — wywołań:   1
         0 ms  _BuildLinkAction                         — wywołań:   1
@@ -215,113 +211,115 @@ Podsumowanie wydajności elementu docelowego:
         0 ms  CopyFilesToOutputDirectory               — wywołań:   1
         0 ms  _CheckForCompileOutputs                  — wywołań:   1
         0 ms  _CopySourceItemsToOutputDirectory        — wywołań:   1
+        0 ms  _GetCopyToOutputDirectoryItemsFromThisProject — wywołań:   1
         0 ms  _GetCopyToOutputDirectoryItemsFromTransitiveProjectReferences — wywołań:   1
+        0 ms  GetCopyToOutputDirectoryXamlAppDefs      — wywołań:   1
+        0 ms  _ClCompile                               — wywołań:   1
         0 ms  _PopulateCommonStateForGetCopyToOutputDirectoryItems — wywołań:   1
-        0 ms  ResolvedXDCMake                          — wywołań:   1
-        0 ms  _CalculatePostXamarinTelemetry           — wywołań:   1
         0 ms  _Appverifier                             — wywołań:   1
         0 ms  CreateSatelliteAssemblies                — wywołań:   1
-        0 ms  _GenerateSatelliteAssemblyInputs         — wywołań:   1
         0 ms  MakeDirsForFxc                           — wywołań:   1
         0 ms  SatelliteDllsProjectOutputGroup          — wywołań:   1
         0 ms  BuiltProjectOutputGroup                  — wywołań:   1
         0 ms  _BscMake                                 — wywołań:   1
         0 ms  MakeDirsForBscMake                       — wywołań:   1
-        0 ms  ComputeCLCompileGeneratedSbrFiles        — wywołań:   1
         0 ms  _XdcMake                                 — wywołań:   1
         0 ms  MakeDirsForXdcMake                       — wywołań:   1
+        0 ms  ComputeCLCompileGeneratedXDCFiles        — wywołań:   1
+        0 ms  ResolvedXDCMake                          — wywołań:   1
         0 ms  _Deploy                                  — wywołań:   1
         0 ms  AfterClCompile                           — wywołań:   1
         0 ms  Build                                    — wywołań:   1
         0 ms  SelectClCompile                          — wywołań:   1
-        0 ms  SelectCustomBuild                        — wywołań:   1
         0 ms  _SelectedFiles                           — wywołań:   1
         0 ms  PreBuildEvent                            — wywołań:   1
         0 ms  BeforeBuildGenerateSources               — wywołań:   1
         0 ms  BuildGenerateSourcesTraverse             — wywołań:   1
-        0 ms  AssignProjectConfiguration               — wywołań:   1
-        0 ms  ResolveReferences                        — wywołań:   1
         0 ms  AfterResolveReferences                   — wywołań:   1
-        0 ms  ResolveAssemblyReferences                — wywołań:   1
-        0 ms  ComputeCustomBuildOutput                 — wywołań:   1
         0 ms  ExpandSDKReferences                      — wywołań:   1
-        0 ms  _SplitProjectReferencesByFileExistence   — wywołań:   1
+        0 ms  ResolveSDKReferences                     — wywołań:   1
         0 ms  SetCABuildNativeEnvironmentVariables     — wywołań:   1
         0 ms  _CheckWindowsSDKInstalled                — wywołań:   1
-        0 ms  _AddOutputPathToGlobalPropertiesToRemove — wywołań:   1
+        0 ms  SelectCustomBuild                        — wywołań:   1
         0 ms  GetResolvedWinMD                         — wywołań:   1
-        0 ms  AddExternalIncludDirectoriesToPaths      — wywołań:   1
         0 ms  GetReferenceAssemblyPaths                — wywołań:   1
         0 ms  GetFrameworkPaths                        — wywołań:   1
         0 ms  ResolveProjectReferences                 — wywołań:   1
-        0 ms  ResolveSDKReferences                     — wywołań:   1
-        0 ms  CopyFileToFolders                        — wywołań:   1
+        0 ms  PrepareProjectReferences                 — wywołań:   1
+        0 ms  _AddOutputPathToGlobalPropertiesToRemove — wywołań:   1
+        0 ms  _SplitProjectReferencesByFileExistence   — wywołań:   1
         0 ms  IgnoreJavaScriptOutputAssembly           — wywołań:   1
         0 ms  BeforeResolveReferences                  — wywołań:   1
-        0 ms  MakeDirsForCl                            — wywołań:   1
-        0 ms  SetTelemetryEnvironmentVariables         — wywołań:   1
-        0 ms  ComputeStdModulesCompileInputs           — wywołań:   1
-        0 ms  _PrepareForBuild                         — wywołań:   1
+        0 ms  _PrepareForReferenceResolution           — wywołań:   1
+        0 ms  AddExternalIncludDirectoriesToPaths      — wywołań:   1
+        0 ms  ComputeCustomBuildOutput                 — wywołań:   1
+        0 ms  ResolveReferences                        — wywołań:   1
+        0 ms  BuildGenerateSources                     — wywołań:   1
         0 ms  ComputeReferenceCLInput                  — wywołań:   1
         0 ms  GetReferencedVCProjectsInfo              — wywołań:   1
         0 ms  FindReferenceAssembliesForReferences     — wywołań:   1
         0 ms  ComputeCLInputPDBName                    — wywołań:   1
-        0 ms  _Xsd                                     — wywołań:   1
-        0 ms  BuildCompileTraverse                     — wywołań:   1
-        0 ms  BuildGenerateSources                     — wywołań:   1
         0 ms  BeforeClCompile                          — wywołań:   1
+        0 ms  BuildCompileTraverse                     — wywołań:   1
+        0 ms  _BuildGenerateSourcesAction              — wywołań:   1
         0 ms  AfterBuildGenerateSourcesEvent           — wywołań:   1
         0 ms  AfterBuildGenerateSources                — wywołań:   1
-        0 ms  _Midl                                    — wywołań:   1
+        0 ms  ComputeStdModulesCompileInputs           — wywołań:   1
         0 ms  AfterMidl                                — wywołań:   1
         0 ms  ComputeMIDLGeneratedCompileInputs        — wywołań:   1
-        0 ms  MakeDirsForMidl                          — wywołań:   1
-        0 ms  _BuildGenerateSourcesAction              — wywołań:   1
-        0 ms  PrepareProjectReferences                 — wywołań:   1
-        1 ms  CustomBuild                              — wywołań:   1
-        1 ms  WarnCompileDuplicatedFilename            — wywołań:   1
-        1 ms  _GetProjectReferenceTargetFrameworkProperties — wywołań:   1
-        1 ms  _GetCopyToOutputDirectoryItemsFromThisProject — wywołań:   1
-        1 ms  GetCopyToOutputDirectoryItems            — wywołań:   1
-        1 ms  GetCopyToOutputDirectoryXamlAppDefs      — wywołań:   1
-        1 ms  ComputeCLOutputs                         — wywołań:   1
-        1 ms  AssignTargetPaths                        — wywołań:   1
-        1 ms  _CheckForInvalidConfigurationAndPlatform — wywołań:   1
-        1 ms  ContentFilesProjectOutputGroup           — wywołań:   1
+        0 ms  _Xsd                                     — wywołań:   1
+        0 ms  _Midl                                    — wywołań:   1
+        1 ms  _CalculatePostXamarinTelemetry           — wywołań:   1
+        1 ms  IncrementalClean                         — wywołań:   1
+        1 ms  FixupCLCompileOptions                    — wywołań:   1
         1 ms  MakeDirsForLink                          — wywołań:   1
         1 ms  SetBuildDefaultEnvironmentVariables      — wywołań:   1
-        1 ms  _PrepareForReferenceResolution           — wywołań:   1
-        1 ms  FixupCLCompileOptions                    — wywołań:   1
+        1 ms  AssignProjectConfiguration               — wywołań:   1
+        1 ms  ComputeCLCompileGeneratedSbrFiles        — wywołań:   1
         1 ms  FinalizeBuildStatus                      — wywołań:   1
-        2 ms  _CleanGetCurrentAndPriorFileWrites       — wywołań:   1
-        2 ms  PrepareForBuild                          — wywołań:   1
-        2 ms  InitializeBuildStatus                    — wywołań:   1
-        3 ms  TlogCleanup                              — wywołań:   1
-       13 ms  CreateRecipeFile                         — wywołań:   1
-      155 ms  Link                                     — wywołań:   1
-      182 ms  ClCompile                                — wywołań:   1
+        1 ms  _CleanGetCurrentAndPriorFileWrites       — wywołań:   1
+        1 ms  _GenerateSatelliteAssemblyInputs         — wywołań:   1
+        1 ms  WarnCompileDuplicatedFilename            — wywołań:   1
+        1 ms  _PrepareForBuild                         — wywołań:   1
+        1 ms  MakeDirsForMidl                          — wywołań:   1
+        1 ms  ContentFilesProjectOutputGroup           — wywołań:   1
+        1 ms  ResolveAssemblyReferences                — wywołań:   1
+        1 ms  MakeDirsForCl                            — wywołań:   1
+        1 ms  AssignTargetPaths                        — wywołań:   1
+        2 ms  GetCopyToOutputDirectoryItems            — wywołań:   1
+        3 ms  InitializeBuildStatus                    — wywołań:   1
+        4 ms  SetTelemetryEnvironmentVariables         — wywołań:   1
+        6 ms  _CheckForInvalidConfigurationAndPlatform — wywołań:   1
+        6 ms  CustomBuild                              — wywołań:   1
+        6 ms  TlogCleanup                              — wywołań:   1
+        7 ms  CopyFileToFolders                        — wywołań:   1
+        7 ms  PrepareForBuild                          — wywołań:   1
+       16 ms  CreateRecipeFile                         — wywołań:   1
+       28 ms  _GetProjectReferenceTargetFrameworkProperties — wywołań:   1
+      163 ms  Link                                     — wywołań:   1
+      257 ms  ClCompile                                — wywołań:   1
 
 Podsumowanie wydajności zadania:
-        0 ms  Message                                  — wywołań:  23
-        0 ms  RemoveDuplicates                         — wywołań:   2
-        0 ms  AssignProjectConfiguration               — wywołań:   1
         0 ms  MSBuild                                  — wywołań:   1
-        0 ms  SetRidAgnosticValueForProjects           — wywołań:   1
-        0 ms  MakeDir                                  — wywołań:  10
-        0 ms  CheckVCToolsetVersion                    — wywołań:   1
-        0 ms  VCMessage                                — wywołań:   1
-        0 ms  FindUnderPath                            — wywołań:   5
-        0 ms  WriteLinesToFile                         — wywołań:   1
         0 ms  ConvertToAbsolutePath                    — wywołań:   1
+        0 ms  RemoveDuplicates                         — wywołań:   2
+        0 ms  AssignTargetPath                         — wywołań:   7
         0 ms  AssignCulture                            — wywołań:   1
-        1 ms  GetOutOfDateItems                        — wywołań:   3
-        1 ms  CallTarget                               — wywołań:   2
-        1 ms  SetEnv                                   — wywołań:  11
-        1 ms  Touch                                    — wywołań:   2
+        1 ms  ReadLinesFromFile                        — wywołań:   2
+        1 ms  WriteLinesToFile                         — wywołań:   1
+        1 ms  AssignProjectConfiguration               — wywołań:   1
+        1 ms  MakeDir                                  — wywołań:  10
         1 ms  Delete                                   — wywołań:   2
-        2 ms  AssignTargetPath                         — wywołań:   7
-        2 ms  ReadLinesFromFile                        — wywołań:   2
-        3 ms  CleanupStaleTlogItems                    — wywołań:   1
-       13 ms  GenerateDesktopDeployRecipe              — wywołań:   1
-      153 ms  Link                                     — wywołań:   1
-      178 ms  CL                                       — wywołań:   2
+        1 ms  FindUnderPath                            — wywołań:   5
+        1 ms  SetEnv                                   — wywołań:  11
+        1 ms  SetRidAgnosticValueForProjects           — wywołań:   1
+        1 ms  Touch                                    — wywołań:   2
+        1 ms  CheckVCToolsetVersion                    — wywołań:   1
+        1 ms  CallTarget                               — wywołań:   2
+        2 ms  Message                                  — wywołań:  23
+        2 ms  VCMessage                                — wywołań:   1
+        6 ms  CleanupStaleTlogItems                    — wywołań:   1
+        7 ms  GetOutOfDateItems                        — wywołań:   3
+       16 ms  GenerateDesktopDeployRecipe              — wywołań:   1
+      160 ms  Link                                     — wywołań:   1
+      254 ms  CL                                       — wywołań:   2
