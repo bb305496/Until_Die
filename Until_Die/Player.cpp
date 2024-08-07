@@ -14,6 +14,18 @@ void Player::initVariables()
 	this->canCastSpeel = true;
 }
 
+void Player::initHibBox()
+{
+	this->playerHibBoxSize.x = 50.f;
+	this->playerHibBoxSize.y = 100.f;
+
+
+	this->playerHitBox.setSize(this->playerHibBoxSize);
+	this->playerHitBox.setOutlineThickness(1.f);
+	this->playerHitBox.setOutlineColor(sf::Color::Green);
+	this->playerHitBox.setFillColor(sf::Color(0, 0, 0, 0));
+}
+
 void Player::initTexture()
 {
 	if (!this->texture.loadFromFile("Textures/Sprites/Main/Kenshin.png"))
@@ -73,6 +85,7 @@ Player::Player()
 	this->initVariables();
 	this->initTexture();
 	this->initSprite();
+	this->initHibBox();
 	this->initAnimations();
 	this->initPhysics();
 }
@@ -112,9 +125,32 @@ void Player::resetVelocityY()
 	this->velocity.y = 0.f;
 }
 
+void Player::handelCollisionY()
+{
+	if (this->velocity.y < 0.f)
+	{
+		this->velocity.y = 0.f;
+	}
+}
+
 void Player::resetVelocityX()
 {
 	this->velocity.x = 0.f;
+}
+
+sf::Vector2f Player::getVelocity()
+{
+	return this->velocity;
+}
+
+const sf::RectangleShape& Player::getHitBox() const
+{
+	return this->playerHitBox;
+}
+
+sf::FloatRect Player::getGlobalBounds()
+{
+	return this->playerHitBox.getGlobalBounds();
 }
 
 bool Player::getCanJump()
@@ -147,7 +183,6 @@ void Player::move(const float dir_x, const float dir_y)
 void Player::jump()
 {
 	this->velocity.y = -this->velocityMaxY;
-
 }
 
 void Player::updatePhysics(float deltaTime)
@@ -198,6 +233,22 @@ void Player::updateMovement()
 		this->movingRight = true;
 		this->movingLeft = false;
 	}
+	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Num4)
+		&& this->jumpBoostTimer.asSeconds() >= 5.f)
+	{
+			this->jumpBoostClock.restart();
+			this->velocityMaxY = 130.f;
+			this->jumpBoostDurationClock.restart();
+	}
+	else if (this->jumpBoostDurationTimer.asSeconds() >= 3.f)
+	{
+		this->jumpBoostDurationClock.restart();
+		this->velocityMaxY = 75.f;
+	}
+	this->jumpBoostDurationTimer = this->jumpBoostDurationClock.getElapsedTime();
+	std::cout << "Jump timer: " << this->jumpBoostDurationTimer.asSeconds() << " sekund" << std::endl;
+	this->jumpBoostTimer = this->jumpBoostClock.getElapsedTime();
+	
 
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Space) && this->canJump)
 	{
@@ -230,7 +281,6 @@ void Player::updateAttack()
 		this->isCastingULT = true;
 		this->canCastSpeel = false;
 	}
-	//std::cout << "Basic attack timer: " << this->basicAttackTimer.asSeconds() << " sekund" << std::endl;
 	this->ultTimer = this->ultClock.getElapsedTime();
 	//std::cout << "Ult timer: " << this->ultTimer.asSeconds() << " sekund" << std::endl;
 	this->tornadoTimer = this->tornadoClock.getElapsedTime();
@@ -475,18 +525,28 @@ void Player::updateAnimations()
 	
 }
 
+void Player::updateHitBox()
+{
+	this->playerHitBoxPos = sf::Vector2f(
+		this->getPosition().x + (this->sprite.getGlobalBounds().width / 2.f) - (this->playerHibBoxSize.x / 2.f),
+		this->getPosition().y + (this->sprite.getGlobalBounds().height / 2.f) - (this->playerHibBoxSize.y / 2.f)
+	);
+	this->playerHitBox.setPosition(this->playerHitBoxPos);
+}
+
 void Player::update(float deltaTime)
 {
 	this->updateMovement();
 	this->updateAttack();
 	this->updateAnimations();
 	this->updatePhysics(deltaTime);
+	this->updateHitBox();
 }
 
 void Player::render(sf::RenderTarget& target)
 {
 	target.draw(this->sprite);
-
+	target.draw(this->playerHitBox);
 	if (this->castULT)
 	{
 		target.draw(this->ultSprite);

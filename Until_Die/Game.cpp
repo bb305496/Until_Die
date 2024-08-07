@@ -3,7 +3,7 @@
 
 void Game::initWindow()
 {
-	this->window.create(sf::VideoMode(1920,1080), "Until Die", sf::Style::Fullscreen);
+	this->window.create(sf::VideoMode(1920,1080), "Until Die", sf::Style::Default);
 	this->window.setFramerateLimit(60);
 }
 
@@ -42,6 +42,30 @@ void Game::initTileMap()
 	}
 }
 
+void Game::initJumpingTile()
+{
+	for (int i = 10; i < 13; i++)
+	{
+		this->tileMap->addTile(i, 18);
+	}
+	for (int i = 15; i < 20; i++)
+	{
+		this->tileMap->addTile(i, 16);
+	}
+	for (int i = 24; i < 29; i++)
+	{
+		this->tileMap->addTile(i, 14);
+	}
+	for (int i = 15; i < 19; i++)
+	{
+		this->tileMap->addTile(i, 12);
+	}
+	for (int i = 25; i < 32; i++)
+	{
+		this->tileMap->addTile(i, 7);
+	}
+}
+
 void Game::initBg()
 {
 	if (!this->bgTexture.loadFromFile("Textures/Bg/ForestBg.png"))
@@ -59,6 +83,7 @@ Game::Game()
 	this->initBg();
 	this->initTileSheet();
 	this->initTileMap();
+	this->initJumpingTile();
 	this->initPlayer();
 }
 
@@ -85,7 +110,10 @@ void Game::updateCollision()
 		this->player->setPosition(windowLeft, playerBounds.top);
 		this->player->resetVelocityX();
 	}
+
 	this->tileMap->checkPlayerCollision(this->player);
+
+	//this->player->handelCollisionY();
 }
 
 void Game::updateTileMap()

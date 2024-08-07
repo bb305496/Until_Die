@@ -17,6 +17,15 @@ private:
 	sf::Time ultTimer;
 	sf::Clock tornadoClock;
 	sf::Time tornadoTimer;
+	sf::Clock jumpBoostClock;
+	sf::Time jumpBoostTimer;
+	sf::Clock jumpBoostDurationClock;
+	sf::Time jumpBoostDurationTimer;
+
+	//Hitbox
+	sf::RectangleShape playerHitBox;
+	sf::Vector2f playerHibBoxSize;
+	sf::Vector2f playerHitBoxPos;
 
 	//Animation
 	short animState;
@@ -43,6 +52,7 @@ private:
 	float velocityMaxY;
 
 	void initVariables();
+	void initHibBox();
 	void initTexture();
 	void initSprite();
 	void initAnimations();
@@ -58,8 +68,13 @@ public:
 	
 	void setPosition(const float x, const float y);
 	void resetVelocityY();
+	void handelCollisionY();
 	void resetVelocityX();
+	sf::Vector2f getVelocity();
+	
 
+	const sf::RectangleShape& getHitBox() const;
+	sf::FloatRect getGlobalBounds();
 	bool getCanJump();
 	void setCanJump();
 
@@ -70,6 +85,7 @@ public:
 	void updateMovement();
 	void updateAttack();
 	void updateAnimations();
+	void updateHitBox();
 	void update(float deltaTime);
 	void render(sf::RenderTarget& target);
 };

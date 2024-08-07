@@ -33,7 +33,7 @@ TileMap::~TileMap()
 
 void TileMap::checkPlayerCollision(Player* player)
 {
-	this->playerBounds = player->getGlobalBounds(); 
+	this->playerBounds = player->getHitBox().getGlobalBounds(); 
 
 	for (int i = 0; i < this->tiles.size(); i++)
 	{
@@ -47,10 +47,43 @@ void TileMap::checkPlayerCollision(Player* player)
 
 				if (playerBounds.intersects(tileBounds))
 				{
-
-					player->setPosition(player->getPosition().x, tileBounds.top - player->getGlobalBounds().height);
+					/*player->setPosition(player->getPosition().x, tileBounds.top - player->getGlobalBounds().height);
 					player->resetVelocityY();
-					player->setCanJump();
+					player->setCanJump();*/
+
+					// Sprawdzamy kolizjê od do³u 
+					if (playerBounds.top + playerBounds.height <= tileBounds.top + tileBounds.height &&
+						playerBounds.top + playerBounds.height > tileBounds.top)
+					{
+						player->setPosition(player->getPosition().x, tileBounds.top - player->getGlobalBounds().height);
+						player->resetVelocityY();
+						player->setCanJump();
+					}
+					// Sprawdzamy kolizjê od góry
+					else if (playerBounds.top >= tileBounds.top &&
+						playerBounds.top < tileBounds.top + tileBounds.height)
+					{
+						player->setPosition(player->getPosition().x, tileBounds.top + tileBounds.height);
+						player->resetVelocityY();
+						player->setCanJump();
+					}
+					// Sprawdzamy kolizjê z boku
+					else if (playerBounds.left < tileBounds.left + tileBounds.width &&
+						playerBounds.left + playerBounds.width > tileBounds.left &&
+						playerBounds.top + playerBounds.height > tileBounds.top &&
+						playerBounds.top < tileBounds.top + tileBounds.height)
+					{
+						// Kolizja z lewej strony
+						if (playerBounds.left < tileBounds.left)
+						{
+							player->setPosition(tileBounds.left - playerBounds.width, player->getPosition().y);
+						}
+						// Kolizja z prawej strony
+						else
+						{
+							player->setPosition(tileBounds.left + tileBounds.width, player->getPosition().y);
+						}
+					}
 				}
 			}
 		}

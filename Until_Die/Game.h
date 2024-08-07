@@ -31,6 +31,7 @@ private:
 	void initTileSheet();
 	void initPlayer();
 	void initTileMap();
+	void initJumpingTile();
 	void initBg();
 
 public:
